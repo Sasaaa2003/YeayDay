@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #ffeaf2;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Animasi bunga */
+    .flower {
+      position: absolute;
+      font-size: 36px;
+      animation: float 6s ease-in-out infinite;
+    }
+    .flower1 { top: 8%; left: 10%; animation-delay: 0s; }
+    .flower2 { top: 18%; right: 10%; animation-delay: 2s; }
+    .flower3 { bottom: 12%; left: 15%; animation-delay: 1s; }
+    .flower4 { bottom: 10%; right: 15%; animation-delay: 3s; }
+
+    @keyframes float {
+      0%   { transform: translateY(0) rotate(0deg); }
+      50%  { transform: translateY(-15px) rotate(10deg); }
+      100% { transform: translateY(0) rotate(0deg); }
+    }
+
+    /* Konten */
+    .content {
+      position: relative;
+      z-index: 10;
+      margin: 80px auto;
+      max-width: 800px;
+      padding: 20px;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 48px;
+      color: #ff4fa0;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 22px;
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    /* Card ucapan */
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      text-align: left;
+      line-height: 1.7;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .highlight {
+      color: #ff4fa0;
+      font-weight: 600;
+    }
+
+    .balloon {
+      font-size: 50px;
+      animation: up 5s ease-in-out infinite;
+      margin-bottom: 20px;
+    }
+
+    @keyframes up {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Bunga goyang -->
+  <div class="flower flower1">🌸</div>
+  <div class="flower flower2">🌺</div>
+  <div class="flower flower3">🌼</div>
+  <div class="flower flower4">🌻</div>
+
+  <!-- Konten ucapan -->
+  <div class="content">
+    <div class="balloon">🎈🎈🎈</div>
+    <h1>YEayyyy its your dayyyy 🎉</h1>
+    <h2>Happy birthday nanaaa 💖</h2>
+
+    <div class="card">
+      <p>
+        Selamat ulang tahun, <span class="highlight">Hasnaaaa!!</span> 🎂✨  
+        Hari ini resmi nambah umur, tapi sayangnya tinggi badan nggak ikut nambah 😜.  
+        Semoga di usia yang baru ini kamu makin bahagia, makin kuat menghadapi cobaan  
+        (termasuk cobaan kuis mendadak, wifi lemot, dan dosen killer 👀).
+      </p>
+      <p>
+        Doaku, semoga semua impianmu tercapai — mulai dari yang sederhana kayak bisa tidur siang  
+        tanpa diganggu, sampai yang besar kayak jalan-jalan ke luar negeri tanpa mikirin ongkosnya.  
+        Oh iya, jangan lupa tetap bersyukur, tetap ketawa (bahkan pas dompet lagi tipis 💸),  
+        dan tetap jadi Hasna yang selalu bikin orang-orang di sekitarnya betah.
+      </p>
+      <p>
+        Pokoknya hari ini kamu harus happy banget, karena kalau enggak… rugi!  
+        Hidup cuma sekali, ulang tahun juga cuma setahun sekali 😆.  
+        So, <span class="highlight">happy birthday ya Nanaaaa</span>, panjang umur, sehat selalu,  
+        dan semoga rezekimu lancar biar bisa traktir aku nanti 🍕🍰.  
+        Love you with all the jokes and cakes in the world 🎉💖
+      </p>
+      <p> by me Anisa Trizaskia </p>
+
+
+    </div>
+  </div>
+
+  <!-- Musik -->
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-smile.mp3" type="audio/mpeg">
+    Browser kamu tidak mendukung audio.
+  </audio>
+</body>
+</html>

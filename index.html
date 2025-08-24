@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Surprise</title>
+  <style> /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url("assets/1.jpg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/* Overlay transparan */
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgba(255, 240, 245, 0.5); /* pink transparan */
+  backdrop-filter: blur(3px);
+}
+
+/* Card putih */
+.card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  max-width: 350px;
+  width: 90%;
+}
+
+/* Judul */
+.title {
+  font-family: 'Pacifico', cursive;
+  font-size: 36px;
+  color: #ff5e99;
+  margin-bottom: 15px;
+}
+
+/* Subjudul */
+.subtitle {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+/* Tombol */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #ff9ec4, #f77bab);
+  color: white;
+  border-radius: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #f77bab, #ff5e99);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.btn.purple {
+  background: linear-gradient(135deg, #d2b8ff, #a985f7);
+  color: #2e2e2e;
+  border-radius: 20px;
+}
+
+.btn.purple:hover {
+  background: linear-gradient(135deg, #a985f7, #8255d4);
+  color: white;
+}
+
+.message {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #444;
+  font-weight: 500;
+  display: none;
+}
+
+.btn.next {
+  margin-top: 20px;
+  background: linear-gradient(135deg, #ff9ec4, #f77bab);
+}
+</style>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="overlay">
+    <div class="card">
+      <h1 class="title">Halo Hasna!</h1>
+      <p class="subtitle">Are you ready for the surprises ?</p>
+      <a href="page2.html" class="btn">Please klick here !</a>
+    </div>
+  </div>
+</body>
+</html>
